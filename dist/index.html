@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header__wrapper">
+        <div class="logo">Bookshop</div>
+        <div class="nav">
+            <a href="#" class="nav__active">Books</a>
+            <a href="#">Audiobooks</a>
+            <a href="#">Gifts</a>
+            <a href="#">Kids</a>
+        </div>
+        <div class="icons">
+            <div class="icon user"></div>
+            <div class="icon search"></div>
+            <div class="icon cart">
+                <span id="basket" class="cart__count"></span>
+            </div>    
+        </div>
+    </div>
+  </header>
+  <main>
+    <div class="slider__abs">
+        <div class="slider__abs-item slider__abs-item1">
+            Change<br />old book<br />on new<br />
+            <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7H54" stroke="#1C2A39" stroke-width="2"/>
+                <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2"/>
+            </svg>                        
+        </div>
+        <div class="slider__abs-item slider__abs-item2">
+            Top<br />100<br />books<br />2022<br />
+            <svg width="57" height="14" viewBox="0 0 57 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 7H54" stroke="#1C2A39" stroke-width="2"/>
+                <path d="M48 1L55 7L48 13" stroke="#1C2A39" stroke-width="2"/>
+            </svg>                        
+        </div>
+    </div>
+    <div class="main__wrapper">
+        <div class="slider__wrapper">
+            <section class="slider">
+                <div class="slide active">
+                    <img src="img/slide1.png" alt="Black Friday Sale">
+                </div>
+                <div class="slide">
+                    <img src="img/slide2.png" alt="Top 10 Books for Entrepreneurs">
+                </div>
+                <div class="slide">
+                    <img src="img/slide3.png" alt="Cozy Books Selection">
+                </div>
+            </section>
+            <div class="slider__pins">
+                <div class="slider__pin slider__pin--active"></div>
+                <div class="slider__pin"></div>
+                <div class="slider__pin"></div>
+            </div>
+        </div>
+        <section class="main">
+            <div class="categories">
+                <ul class="categories__list">
+                  <li class="categories__item categories__item--active" data-category="Architecture">Architecture</li>
+                  <li class="categories__item" data-category="Biography">Biography</li>
+                  <li class="categories__item" data-category="Business">Business</li>
+                  <li class="categories__item" data-category="Crafts & Hobbies">Crafts & Hobbies</li>
+                  <li class="categories__item" data-category="Drama">Drama</li>
+                  <li class="categories__item" data-category="Fiction">Fiction</li>
+                  <li class="categories__item" data-category="Food & Drink">Food & Drink</li>
+                  <li class="categories__item" data-category="Health & Wellbeing">Health & Wellbeing</li>
+                  <li class="categories__item" data-category="History & Politics">History & Politics</li>
+                  <li class="categories__item" data-category="Humor">Humor</li>
+                  <li class="categories__item" data-category="Poetry">Poetry</li>
+                  <li class="categories__item" data-category="Psychology">Psychology</li>
+                  <li class="categories__item" data-category="Science">Science</li>
+                  <li class="categories__item" data-category="Technology">Technology</li>
+                  <li class="categories__item" data-category="Travel & Maps">Travel & Maps</li>
+                </ul>
+              </div>
+
+              <div id="books" class="books">
+              </div>
+        </section>
+
+        <button id="loadMore" class="button loadmore__button">Load More</button>
+    </div>
+  </main>
+  <script type="module" src="bundle.js"></script>
+</body>
+</html>
